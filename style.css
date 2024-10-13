@@ -154,7 +154,7 @@ nav a {
 /***************  Navn og billede ****************/
 .hero {
   position: relative;
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 .navn_img {
@@ -185,8 +185,8 @@ nav a {
   position: absolute;
   opacity: 30%;
   z-index: 1;
-  top: 394px;
-  left: 51%;
+  top: 426px;
+  left: 52%;
   width: 50%;
 }
 
@@ -221,6 +221,10 @@ nav a {
 }
 
 @media screen and (min-width: 800px) {
+  main {
+    margin: 0;
+  }
+
   .navn_img {
     display: flex;
     flex-direction: row;
@@ -246,13 +250,13 @@ nav a {
   #blad {
     /* display: block; */
     opacity: 18%;
-    top: 12px;
+    top: 40px;
     left: 41%;
     width: 60%;
   }
   /***************  Citat sektion ****************/
   .citat {
-    padding: 6rem 0;
+    padding: 5rem 0;
   }
 
   /***************  Om mig sektion ****************/
@@ -264,6 +268,7 @@ nav a {
     left: 10%;
     /* transform: scaleX(-1); */
     width: auto;
+    height: 94.5%;
   }
 
   .om_mig {
