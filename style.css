@@ -177,13 +177,25 @@ nav a {
   width: 50%;
 }
 
+/***************  Citat blå boks ****************/
+
 .citat {
   background-color: var(--bg_blue);
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/***************  Om mig sektion ****************/
+
+.om_mig {
+  padding: 2rem 1rem;
+}
+
+.blomst {
+  display: none;
 }
 
 @media screen and (min-width: 800px) {
@@ -214,5 +226,27 @@ nav a {
     top: 12px;
     left: 41%;
     width: 60%;
+  }
+
+  /***************  Om mig sektion ****************/
+
+  .blomst {
+    display: block;
+    opacity: 10%;
+    left: 4%;
+    position: absolute;
+    width: 41%;
+  }
+
+  .om_mig {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 0;
+    justify-content: end;
+  }
+
+  .om_txt {
+    max-width: 76ch;
+    margin: 0px 8rem;
   }
 }
