@@ -217,7 +217,7 @@ nav a {
 /***************  Om mig sektion ****************/
 
 .om_mig {
-  padding: 4rem 1rem 2.5rem 1rem;
+  padding: 4rem 1rem 2.5rem 2rem;
   position: relative;
 }
 
@@ -252,7 +252,7 @@ nav a {
 
 .yellow_box1 {
   background-color: var(--yellow);
-  padding: 2rem;
+  padding: 2rem 2rem;
 }
 
 .yellow_box1 h5 {
@@ -261,6 +261,7 @@ nav a {
 
 .yellow_box {
   text-align: center;
+  padding: 4rem 0;
 }
 
 .statement {
@@ -282,6 +283,28 @@ nav a {
 
 .statement_div p {
   font-size: 1.2rem;
+}
+
+/***************  INTERESSER ****************/
+.interesser {
+  padding: 6rem 2rem;
+}
+
+.box_interesse {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.box_interesse p {
+  padding: 0;
+}
+
+.ikon {
+  width: 80px;
+  height: 80px;
 }
 
 @media screen and (min-width: 800px) {
@@ -361,5 +384,12 @@ nav a {
     flex-direction: row;
     justify-content: center;
     gap: 10rem;
+  }
+
+  .interesser {
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+    justify-content: center;
   }
 }
