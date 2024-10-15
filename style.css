@@ -154,7 +154,7 @@ nav a {
 /***************  Navn og billede ****************/
 .hero {
   position: relative;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 
 .navn_img {
@@ -185,7 +185,7 @@ nav a {
   position: absolute;
   opacity: 30%;
   z-index: 1;
-  top: 426px;
+  top: 414px;
   left: 52%;
   width: 50%;
 }
@@ -210,6 +210,29 @@ nav a {
 
 .blomst {
   display: none;
+}
+
+.kendetegn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kendetegn span {
+  display: inline;
+}
+
+.kendetegn .group {
+  display: flex; /* Beholder "social" og "struktureret" på samme linje */
+  flex-wrap: nowrap;
+}
+
+.kendetegn span:nth-child(7) {
+  /* "social" */
+  display: block; /* Tvinger linjeskift før "social" */
+}
+
+.kendetegn em {
+  margin: 0 0.5rem; /* Tilføjer mellemrum til venstre og højre */
 }
 
 /***************  Gul boks ****************/
@@ -281,5 +304,13 @@ nav a {
   .om_txt {
     max-width: 78ch;
     margin: 0px 8rem;
+  }
+
+  .kendetegn span {
+    display: inline;
+  }
+
+  .kendetegn .group {
+    display: inline;
   }
 }
