@@ -35,7 +35,7 @@ html {
   --bg: #eceef2;
   --bg_blue: #617092;
 
-  --font_headline: "Playfair Display", serif;
+  --font_headline: "Abhaya Libre", serif;
   --font_body: "Lato", sans-serif;
   --font_quote: "Quicksand", sans-serif;
 }
@@ -79,6 +79,15 @@ h5 {
   font-weight: 400;
   font-size: 1.2rem;
   padding-bottom: 1.5rem;
+}
+
+h6 {
+  font-family: var(--font_headline);
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--headline1);
+  font-style: normal;
+  line-height: 4rem;
 }
 
 p {
@@ -237,16 +246,38 @@ nav a {
 
 /***************  Gul boks ****************/
 
-.yellow_box {
+.yellow_box1 {
   background-color: var(--yellow);
-  padding: 4rem 1rem;
+  padding: 2rem;
+}
+
+.yellow_box1 h5 {
+  padding-bottom: 0;
+}
+
+.yellow_box {
   text-align: center;
 }
 
-.statements {
+.statement {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: baseline; /* Justerer baselinjen for + og tallet */
+  padding-top: 1.5rem;
+}
+
+.statement h4 {
+  padding: 0;
+  margin-right: 0.4rem; /* Tilføjer lidt mellemrum mellem "+" og tallet */
+  font-size: 2.5rem;
+}
+
+.statement h6 {
+  padding-bottom: 0.1rem;
+}
+
+.statement_div p {
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -318,5 +349,17 @@ nav a {
 
   .kendetegn .group {
     display: inline;
+  }
+
+  /***************  Gul boks ****************/
+  .yellow_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+  }
+
+  .yellow_box1 {
+    padding: 2rem;
   }
 }
