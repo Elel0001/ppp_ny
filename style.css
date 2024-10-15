@@ -18,7 +18,7 @@ img {
 main {
   margin: 1rem;
   background-color: var(--bg);
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -243,9 +243,15 @@ nav a {
   text-align: center;
 }
 
+.statements {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 @media screen and (min-width: 800px) {
   main {
-    margin: 0;
+    margin: 1rem;
   }
 
   .navn_img {
