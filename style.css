@@ -84,7 +84,7 @@ h5 {
 h6 {
   font-family: var(--font_headline);
   font-size: 6rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--headline1);
   font-style: normal;
   line-height: 4rem;
@@ -124,6 +124,10 @@ em {
 
   h5 {
     font-size: 1.3rem;
+  }
+
+  h6 {
+    font-size: 8.5rem;
   }
 
   p {
@@ -357,9 +361,5 @@ nav a {
     flex-direction: row;
     justify-content: center;
     gap: 10rem;
-  }
-
-  .yellow_box1 {
-    padding: 2rem;
   }
 }
